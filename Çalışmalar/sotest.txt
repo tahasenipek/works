@@ -1,0 +1,49 @@
+
+/*  
+void	ft_anotherline(t_map *map)
+{
+	int			i;
+	int			s;
+	int			c;
+	static int	ext = 0;
+	static int	plyr = 0;
+	static int	coin = 0;
+
+	i = 0;
+	s = 1;
+	if (map->line_cacher[s][0] != '1')
+	{
+		ft_printf("Error\nFirst column wall is not true.");
+		exit(0);
+	}
+	if (map->line_cacher[s][map->columnnbr] != '1')
+	{
+		ft_printf("Error\nLast column wall is not true.");
+		exit(0);
+	}
+	while (map->line_cacher[s][++i] != NULL)
+	{
+		if ((map->line_cacher[s][i] != '1') || (map->line_cacher[s][i] != '0'))
+		{
+			if (map->line_cacher[s][i][i++] == 'P')
+				plyr++;
+			else if (map->line_cacher[s][i][i++] == 'E')
+				ext++;
+			else if (smap->line_cacher[s][i][i++] == 'C')
+				coin++;
+			{
+				ft_printf("Error\nYour characters count is not true..");
+				exit(0);
+			}
+		}
+	}
+	s++;
+	ft_anotherline(map);
+	if (i != map->columnnbr)
+	{
+		ft_printf("Error\nYour maps is not true ");
+		exit(0);
+	}
+	char_checker(ext, plyr, coin);
+}
+*/
